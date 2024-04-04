@@ -1,0 +1,114 @@
+:root {
+    --deep-black: #35374B;
+    --dark-blue: #344955;
+    --light-blue: #50727B; 
+    --pale-green: #78A083;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Workbench", Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--deep-black);
+}
+
+body,
+.inner-border,
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 720px;
+    border: 8px solid var(--dark-blue);
+    border-radius: 4px;
+}
+
+.inner-border {
+    height: 100%;
+    width: 100%;
+    padding: 40px 0;
+    flex-direction: column;
+    justify-content: start;
+    background-color: var(--light-blue);
+    border: 8px solid var(--pale-green);
+}
+
+.header,
+.label,
+.input-box,
+.convert-btn,
+.output-box {
+    background-color: var(--dark-blue);
+    color: var(--pale-green);
+    text-shadow: 2px 2px 0 var(--deep-black);
+    font-size: 2rem;
+    font-family: "Workbench", Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+}
+
+.header {
+    padding: 6px 8px 0 8px;
+    margin-bottom: 40px;
+    font-size: 3.25rem;
+}
+
+.label {
+    padding: 4px 8px 2px 8px;
+    margin-bottom: 40px;
+}
+
+.input-box {
+    height: 50px;
+    width: 350px;
+    padding: 0 8px;
+    margin-bottom: 20px;
+    border: 2px solid var(--pale-green);
+}
+
+.convert-btn {
+    height: 50px;
+    width: 365px;
+    border: 2px solid var(--pale-green);
+}
+
+.convert-btn:active {
+    background-color: var(--pale-green);
+    border: 2px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+.output-box {
+    height: 120px;
+    width: 435px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid var(--pale-green);
+}
+
+.hidden {
+    display: none;
+}
+
+.credits {
+    margin-top: 8px;
+    text-decoration: none;
+    color: rgba(120, 160, 131, 0.5);
+    text-shadow: 2px 2px 0 var(--deep-black);
+}
